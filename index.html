@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>টাকা আয় করুন - বিজ্ঞাপন দেখুন</title>
-    <script src='//libtl.com/sdk.js' data-zone='9472189' data-sdk='show_9472189'></script>
+    <script src='//libtl.com/sdk.js' data-zone='10040572' data-sdk='show_10040572'></script>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
     <style>
         :root {
@@ -523,15 +523,29 @@
             
             <div class="progress-container">
                 <div class="progress-header">
-                    <h3>আজকের অগ্রগতি</h3>
-                    <span id="ads-progress">0/10</span>
+                    <h3>আজকের অগ্রগতি (বিজ্ঞাপন)</h3>
+                    <span id="ads-progress">0/50</span>
                 </div>
                 <div class="progress-bar">
                     <div class="progress-fill" id="progress-fill"></div>
                 </div>
                 <div class="progress-text">
+                    <span>0 অ্যাড</span>
+                    <span>50 অ্যাড</span>
+                </div>
+            </div>
+            
+            <div class="progress-container">
+                <div class="progress-header">
+                    <h3>উত্তোলন অগ্রগতি</h3>
+                    <span id="withdrawal-progress">0.00/50.00</span>
+                </div>
+                <div class="progress-bar">
+                    <div class="progress-fill" id="withdrawal-progress-fill"></div>
+                </div>
+                <div class="progress-text">
                     <span>0 টাকা</span>
-                    <span>20 টাকা</span>
+                    <span>50 টাকা</span>
                 </div>
             </div>
             
@@ -541,7 +555,7 @@
             
             <div class="action-buttons">
                 <button class="btn btn-primary" id="watch-ad-btn" onclick="watchAd()">
-                    <i class="fas fa-play"></i> বিজ্ঞাপন দেখুন (২ টাকা)
+                    <i class="fas fa-play"></i> বিজ্ঞাপন দেখুন (২০ পয়সা)
                 </button>
                 <button class="btn btn-success" id="auto-ad-btn" onclick="startAutoAds()">
                     <i class="fas fa-robot"></i> স্বয়ংক্রিয় বিজ্ঞাপন
@@ -584,9 +598,10 @@
             </div>
             
             <div class="rate-info">
-                <p><i class="fas fa-ad"></i> প্রতি বিজ্ঞাপন = ২ টাকা</p>
-                <p><i class="fas fa-money-bill-wave"></i> ন্যূনতম উত্তোলন: ২০ টাকা</p>
+                <p><i class="fas fa-ad"></i> প্রতি বিজ্ঞাপন = ২০ পয়সা</p>
+                <p><i class="fas fa-money-bill-wave"></i> ন্যূনতম উত্তোলন: ৫০ টাকা</p>
                 <p><i class="fas fa-gift"></i> রেফারেল বোনাস: ৫ টাকা প্রতি ব্যবহারকারী</p>
+                <p><i class="fas fa-calendar-day"></i> দৈনিক সীমা: ৫০ বিজ্ঞাপন</p>
             </div>
         </div>
         
@@ -596,7 +611,7 @@
             
             <div class="action-buttons">
                 <button class="btn btn-primary" id="watch-ad-btn-earn" onclick="watchAd()">
-                    <i class="fas fa-play"></i> বিজ্ঞাপন দেখুন (২ টাকা)
+                    <i class="fas fa-play"></i> বিজ্ঞাপন দেখুন (২০ পয়সা)
                 </button>
                 <button class="btn btn-success" id="auto-ad-btn-earn" onclick="startAutoAds()">
                     <i class="fas fa-robot"></i> স্বয়ংক্রিয় বিজ্ঞাপন
@@ -620,8 +635,9 @@
             </div>
             
             <div class="rate-info">
-                <p><i class="fas fa-ad"></i> প্রতি বিজ্ঞাপন = ২ টাকা</p>
+                <p><i class="fas fa-ad"></i> প্রতি বিজ্ঞাপন = ২০ পয়সা</p>
                 <p><i class="fas fa-gift"></i> রেফারেল বোনাস: ৫ টাকা প্রতি ব্যবহারকারী</p>
+                <p><i class="fas fa-calendar-day"></i> দৈনিক সীমা: ৫০ বিজ্ঞাপন</p>
             </div>
         </div>
         
@@ -637,7 +653,7 @@
             <div class="withdraw-section" id="withdraw-section">
                 <div class="form-group">
                     <label for="withdraw-amount">পরিমাণ (টাকা)</label>
-                    <input type="number" id="withdraw-amount" class="form-control" placeholder="টাকার পরিমাণ লিখুন" min="20">
+                    <input type="number" id="withdraw-amount" class="form-control" placeholder="টাকার পরিমাণ লিখুন" min="50">
                 </div>
                 <div class="form-group">
                     <label for="payment-method">পেমেন্ট মাধ্যম</label>
@@ -645,7 +661,7 @@
                         <option value="" disabled selected>পেমেন্ট মাধ্যম নির্বাচন করুন</option>
                         <option value="bkash">bKash</option>
                         <option value="nagad">Nagad</option>
-                        <option value="rocket">Rocket</option>
+                        <script src='//libtl.com/sdk.js' data-zone='9981100' data-sdk='show_9981100'></script>
                     </select>
                 </div>
                 <div class="form-group">
@@ -659,7 +675,7 @@
             </div>
             
             <div class="rate-info">
-                <p><i class="fas fa-money-bill-wave"></i> ন্যূনতম উত্তোলন: ২০ টাকা</p>
+                <p><i class="fas fa-money-bill-wave"></i> ন্যূনতম উত্তোলন: ৫০ টাকা</p>
                 <p><i class="fas fa-clock"></i> উত্তোলন প্রসেসিং সময়: ২৪-৪৮ ঘন্টা</p>
             </div>
         </div>
@@ -671,26 +687,26 @@
             <div class="notification-list">
                 <div class="stat-card">
                     <h3><i class="fas fa-info-circle"></i> নতুন আপডেট</h3>
-                    <p>স্বয়ংক্রিয় বিজ্ঞাপন সিস্টেম চালু হয়েছে। এখন থেকে স্বয়ংক্রিয়ভাবে বিজ্ঞাপন দেখে টাকা আয় করতে পারবেন।</p>
-                    <small>২ দিন আগে</small>
+                    <p>প্রতি বিজ্ঞাপনের মূল্য ২০ পয়সা করা হয়েছে। দৈনিক সর্বোচ্চ ৫০টি বিজ্ঞাপন দেখা যাবে।</p>
+                    <small>আজ</small>
                 </div>
                 
                 <div class="stat-card">
                     <h3><i class="fas fa-gift"></i> বিশেষ অফার</h3>
-                    <p>এই সপ্তাহে অতিরিক্ত ১০% বোনাস পেতে আপনার বন্ধুদের আমন্ত্রণ করুন।</p>
-                    <small>৫ দিন আগে</small>
+                    <p>আপনার বন্ধুদের আমন্ত্রণ করুন এবং প্রতিটি সফল রেফারেলের জন্য ৫ টাকা বোনাস পান।</p>
+                    <small>২ দিন আগে</small>
                 </div>
                 
                 <div class="stat-card">
                     <h3><i class="fas fa-exclamation-triangle"></i> গুরুত্বপূর্ণ নোটিশ</h3>
-                    <p>উত্তোলনের জন্য ন্যূনতম ২০ টাকা প্রয়োজন। দয়া করে উত্তোলন করার আগে নিশ্চিত হয়ে নিন।</p>
+                    <p>উত্তোলনের জন্য ন্যূনতম ৫০ টাকা প্রয়োজন। দয়া করে উত্তোলন করার আগে নিশ্চিত হয়ে নিন।</p>
                     <small>১ সপ্তাহ আগে</small>
                 </div>
             </div>
         </div>
         
         <div class="footer">
-            <p>© ২০২৩ টাকা আয় করুন অ্যাপ। সকল অধিকার সংরক্ষিত।</p>
+            <p>© ২০২৫ টাকা আয় করুন অ্যাপ। সকল অধিকার সংরক্ষিত।</p>
         </div>
     </div>
 
@@ -721,13 +737,14 @@
 
     <script>
         // Constants
-        const POINTS_PER_AD = 2.00; // প্রতি বিজ্ঞাপনে ২ টাকা
-        const MIN_WITHDRAW_TAKA = 20; // ন্যূনতম উত্তোলন ২০ টাকা
+        const POINTS_PER_AD = 0.20; // প্রতি বিজ্ঞাপনে ২০ পয়সা (0.20 টাকা)
+        const MIN_WITHDRAW_TAKA = 50; // ন্যূনতম উত্তোলন ৫০ টাকা
         const REFERRAL_BONUS = 5.00; // রেফারেল বোনাস ৫ টাকা
+        const DAILY_AD_LIMIT = 100; // দৈনিক সর্বোচ্চ বিজ্ঞাপন
         
         // Telegram Bot Configuration - এখানে আপনার বটের তথ্য দিন
-        const BOT_TOKEN = "7987524748:AAHmv52bPWjGpWLzvexVBGZ6P5vACjInNzE"; // আপনার বট টোকেন
-        const ADMIN_CHAT_ID = "7011834885"; // আপনার টেলিগ্রাম চ্যাট আইডি
+        const BOT_TOKEN = "8374118835:AAF6dR3AUl-vXwVBbCf3EmlcKanMz6BVG2A"; // আপনার বট টোকেন
+        const ADMIN_CHAT_ID = "5886750004"; // আপনার টেলিগ্রাম চ্যাট আইডি
         
         // Variables
         let watchedAdsCount = 0;
@@ -738,6 +755,8 @@
         let autoAdInterval;
         let isAutoMode = false;
         let isAdLoading = false;
+        let todayAdCount = 0;
+        let today = new Date().toISOString().split('T')[0]; // YYYY-MM-DD
 
         // Initialize the app
         function initApp() {
@@ -847,7 +866,7 @@
 
         // Check if Monetag ad is ready
         function checkAdReady() {
-            if (typeof window.show_9472189 !== 'function') {
+            if (typeof window.show_10040572!== 'function') {
                 document.getElementById('ad-status').innerHTML = '<i class="fas fa-spinner fa-spin"></i> বিজ্ঞাপন সিস্টেম লোড হচ্ছে...';
                 setTimeout(checkAdReady, 1000);
             } else {
@@ -872,6 +891,18 @@
             if (localStorage.getItem('referralEarnings')) {
                 referralEarnings = parseFloat(localStorage.getItem('referralEarnings'));
             }
+            
+            // Check if we have stored today's date and ad count
+            const storedDate = localStorage.getItem('todayDate');
+            if (storedDate === today) {
+                // Same day, load the ad count
+                todayAdCount = parseInt(localStorage.getItem('todayAdCount')) || 0;
+            } else {
+                // New day, reset the ad count
+                todayAdCount = 0;
+                localStorage.setItem('todayDate', today);
+                localStorage.setItem('todayAdCount', todayAdCount.toString());
+            }
         }
 
         // Save user data to localStorage
@@ -880,6 +911,8 @@
             localStorage.setItem('earnedPoints', earnedPoints.toFixed(2));
             localStorage.setItem('referralCount', referralCount);
             localStorage.setItem('referralEarnings', referralEarnings.toFixed(2));
+            localStorage.setItem('todayAdCount', todayAdCount.toString());
+            localStorage.setItem('todayDate', today);
         }
 
         // Update all UI elements
@@ -893,17 +926,30 @@
 
         // Update progress bar and text
         function updateProgress() {
-            const progressPercent = (earnedPoints / MIN_WITHDRAW_TAKA) * 100;
+            // Today's ad progress
+            const dailyProgressPercent = (todayAdCount / DAILY_AD_LIMIT) * 100;
+            document.getElementById('progress-fill').style.width = `${Math.min(dailyProgressPercent, 100)}%`;
+            document.getElementById('ads-progress').textContent = `${todayAdCount}/${DAILY_AD_LIMIT}`;
             
-            document.getElementById('progress-fill').style.width = `${Math.min(progressPercent, 100)}%`;
-            document.getElementById('ads-progress').textContent = `${earnedPoints.toFixed(2)}/${MIN_WITHDRAW_TAKA} টাকা`;
+            // Withdrawal progress
+            const totalEarnings = earnedPoints + referralEarnings;
+            const withdrawalProgressPercent = (totalEarnings / MIN_WITHDRAW_TAKA) * 100;
+            document.getElementById('withdrawal-progress-fill').style.width = `${Math.min(withdrawalProgressPercent, 100)}%`;
+            document.getElementById('withdrawal-progress').textContent = `${totalEarnings.toFixed(2)}/${MIN_WITHDRAW_TAKA}.00`;
         }
 
         // Function to watch an ad and earn points
         function watchAd() {
             if (isAdLoading) return;
             
-            if (typeof window.show_9472189 !== 'function') {
+            // Check daily ad limit
+            if (todayAdCount >= DAILY_AD_LIMIT) {
+                document.getElementById('ad-status').innerHTML = '<i class="fas fa-exclamation-circle"></i> আপনি আজকের দৈনিক সীমা (100 বিজ্ঞাপন) শেষ করেছেন। আগামীকাল আবার চেষ্টা করুন।';
+                showNotification('আপনি আজকের দৈনিক সীমা শেষ করেছেন! আগামীকাল আবার চেষ্টা করুন।', 'error');
+                return;
+            }
+            
+            if (typeof window.show_9981100!== 'function') {
                 document.getElementById('ad-status').innerHTML = '<i class="fas fa-exclamation-circle"></i> বিজ্ঞাপন সিস্টেম প্রস্তুত নয়। দয়া করে অপেক্ষা করুন...';
                 return;
             }
@@ -915,9 +961,10 @@
             
             try {
                 // Show the ad
-                window.show_9472189().then(() => {
+                window.show_10040572().then(() => {
                     // Ad watched successfully
                     watchedAdsCount++;
+                    todayAdCount++;
                     earnedPoints += POINTS_PER_AD;
                     
                     saveUserData();
@@ -928,7 +975,7 @@
                     createCoinAnimation();
                     
                     // Show success notification
-                    showNotification(`২ টাকা যোগ হয়েছে! আপনার ব্যালেন্স: ${(earnedPoints + referralEarnings).toFixed(2)} টাকা`, 'success');
+                    showNotification(`২০ পয়সা যোগ হয়েছে! আপনার ব্যালেন্স: ${(earnedPoints + referralEarnings).toFixed(2)} টাকা`, 'success');
                     
                     // Check if earned enough for withdrawal
                     if (earnedPoints + referralEarnings >= MIN_WITHDRAW_TAKA) {
@@ -1156,3 +1203,5 @@
     </script>
 </body>
 </html>
+
+
